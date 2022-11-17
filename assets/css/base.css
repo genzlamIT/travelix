@@ -1,0 +1,55 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #929191;
+    --yellow-color: #fa9e1b;
+    --purple-color: #8d4fff;
+    --secondary-color: #31124b;
+   
+}
+@font-face {
+    font-family: 'Beyond';
+    src: url('../font/FontsFree-Net-Beyond.ttf');
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    padding: 4px 12px;
+    font-size: 1.3rem;
+    min-width: 180px;
+    min-height: 54px;
+    border-radius: 27px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: #ccc 0px 0px 1px;
+}
+
+
+.btn.secondary-btn {
+    background-color: var(--secondary-color);
+}
+
+.primary-btn.btn{
+    background: linear-gradient(to right, var(--yellow-color), var(--purple-color));
+}
+
+.primary-btn.btn:hover {
+    background: linear-gradient(to right, var(--purple-color),var(--yellow-color));
+}
